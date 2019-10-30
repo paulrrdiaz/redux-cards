@@ -21,7 +21,6 @@ export default () => {
         <Button disabled type="submit">
           Create new card
         </Button>
-        <Button looks="danger">Create new card</Button>
       </FormControl>
     </Form>
   );

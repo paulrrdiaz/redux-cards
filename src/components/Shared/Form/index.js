@@ -56,9 +56,8 @@ const input = css`
   transition: all 0.3s linear 0s;
 
   &:focus {
-    transform: scale(1.1);
     border-color: rgba(var(--black), 0.25);
-    box-shadow: 0 0 15px 5px rgba(var(--black), 0.4);
+    box-shadow: 0 0 12px 2px rgba(var(--yellow), 0.75);
   }
 `;
 
