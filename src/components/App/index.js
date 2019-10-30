@@ -1,19 +1,29 @@
 import React from "react";
 import { Global, css } from "@emotion/core";
-import Styles from "components/Shared/Styles";
-import Lists from "components/Lists";
+import { Router } from "@reach/router";
+
+import Header from "components/Shared/Header";
+import Home from "pages/Home";
+import Board from "pages/Board";
+import Login from "pages/Login";
+import GlobalStyles from "./styled";
 
 function App() {
   return (
     <>
       <Global
         styles={css`
-          ${Styles}
+          ${GlobalStyles}
         `}
       />
-      <div className="App">
-        <Lists />
-      </div>
+      <Header />
+      <main>
+        <Router>
+          <Home path="/" />
+          <Board path="/board" />
+          <Login path="/login" />
+        </Router>
+      </main>
     </>
   );
 }

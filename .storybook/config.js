@@ -4,6 +4,7 @@ import { themes } from "@storybook/theming";
 import { Global, css } from "@emotion/core";
 import Styles from "components/Shared/Styles";
 import { withKnobs } from "@storybook/addon-knobs";
+import { withA11y } from '@storybook/addon-a11y';
 
 configure(require.context("../src", true, /\.stories\.js$/), module);
 
@@ -16,9 +17,6 @@ addParameters({
   }
 });
 
-addDecorator(withKnobs);
-addDecorator(withA11y);
-
 addDecorator(story => (
   <>
     <Global
@@ -29,3 +27,6 @@ addDecorator(story => (
     <div id="storybook-root">{story()}</div>
   </>
 ));
+
+addDecorator(withKnobs);
+addDecorator(withA11y);

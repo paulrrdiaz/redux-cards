@@ -1,29 +1,14 @@
 import React from "react";
-import styled from "@emotion/styled";
 
+import { List, ListTitle } from "./styled";
 import Card from "components/Card";
+import CreateCard from "components/CreateCard";
 
-const List = styled.div`
-  background-color: rgba(var(--black), 0.3);
-  border-radius: 4px;
-  padding: 10px 20px 20px;
-  width: 300px;
-
-  & + & {
-    margin-left: 1em;
-  }
-`;
-
-const ListTitle = styled.div`
-  margin-bottom: 0.5em;
-  font-size: 1.2rem;
-  font-weight: bold;
-`;
-
-export default () => {
+export default ({ title = "Default List's title" }) => {
   return (
     <List>
-      <ListTitle>Lista</ListTitle>
+      <ListTitle>{title}</ListTitle>
+      <CreateCard />
       {[1, 2].map(id => (
         <Card key={id} />
       ))}

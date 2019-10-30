@@ -9,8 +9,8 @@ const Styles = css`
   :root {
     --yellow: 255, 177, 66;
     --blue: 52, 172, 224;
-    --red: 255, 82, 82;
-    --grey: 132, 129, 122;
+    --red: 179, 57, 57;
+    --green: 33, 140, 116;
     --white: 255, 255, 255;
     --black: 0, 0, 0;
     --fontOpenSans: "Open Sans Condensed", sans-serif;
@@ -40,8 +40,13 @@ const Styles = css`
   body {
     font-family: var(--fontOpenSans);
     color: rgb(var(--white));
-    background-color: rgb(var(--yellow));
+    background-color: rgb(var(--green));
     cursor: default;
+  }
+
+  main {
+    margin-top: 53px;
+    padding: 20px;
   }
 
   a {
@@ -58,6 +63,19 @@ const Styles = css`
     color: inherit;
     padding: 0;
     cursor: pointer;
+  }
+
+  input,
+  textarea {
+    border: 0;
+
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  textarea {
+    resize: none;
   }
 
   ::-moz-selection {

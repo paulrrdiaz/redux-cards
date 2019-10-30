@@ -1,17 +1,14 @@
-import React from 'react'
-import styled from "@emotion/styled";
-import List from 'components/List';
+import React from "react";
 
-const Lists = styled.div`
-  display: flex;
-`
+import { Lists } from "./styled";
+import List from "components/List";
 
 export default () => {
   return (
     <Lists>
-      {
-        [1, 2].map(id => <List key={id} />)
-      }
+      {[1, 2, 3].map(id => (
+        <List key={id} />
+      ))}
     </Lists>
-  )
-}
+  );
+};
