@@ -4,8 +4,9 @@ import { Router } from "@reach/router";
 
 import Header from "components/Shared/Header";
 import Home from "pages/Home";
-import Board from "pages/Board";
 import Login from "pages/Login";
+import Board from "pages/Board";
+import Drinks from "pages/Drinks";
 import GlobalStyles from "./styled";
 
 function App() {
@@ -20,8 +21,9 @@ function App() {
       <main>
         <Router>
           <Home path="/" />
-          <Board path="/board" />
           <Login path="/login" />
+          <Board path="/board" />
+          <Drinks path="/drinks" />
         </Router>
       </main>
     </>

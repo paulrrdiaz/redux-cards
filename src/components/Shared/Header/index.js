@@ -11,10 +11,13 @@ export default () => {
             <NavListLink to="/">Home</NavListLink>
           </li>
           <li>
+            <NavListLink to="/login">Login</NavListLink>
+          </li>
+          <li>
             <NavListLink to="/board">Board</NavListLink>
           </li>
           <li>
-            <NavListLink to="/login">Login</NavListLink>
+            <NavListLink to="/drinks">Drinks</NavListLink>
           </li>
         </NavList>
       </nav>
