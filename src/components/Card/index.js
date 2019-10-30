@@ -1,14 +1,18 @@
 import React from "react";
-import { Card, CardTitle, CardDescription } from './styled'
+import MoveCardToList from "containers/MoveCardToList";
+import { Card, CardTitle, CardDescription } from "./styled";
 
 export default ({
   title = "Default Title",
-  description = "Default Description"
+  description = "Default Description",
+  listId,
+  cardId
 }) => {
   return (
     <Card>
       <CardTitle>{title}</CardTitle>
       <CardDescription>{description}</CardDescription>
+      <MoveCardToList cardId={cardId} listId={listId} />
     </Card>
   );
 };

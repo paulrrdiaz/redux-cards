@@ -1,6 +1,6 @@
 {
   "id": "1",
-  "title": "The One and Only Kanban Board",
+  "title": "Kanban Board",
   "lists": [
     {
       "cards": [
@@ -11,12 +11,12 @@
         },
         {
           "id": "1558196612656",
-          "title": "Learn MobX",
+          "title": "Learn MobX(maybe)",
           "description": "I heard that's what all of the cool kids were doing these days."
         }
       ],
       "id": "1558196567543",
-      "title": "Backburner"
+      "title": "Backlog"
     },
     {
       "cards": [
@@ -44,13 +44,13 @@
   "users": [
     {
       "id": "1",
-      "name": "Steve Kinney",
-      "email": "hello@stevekinney.net"
+      "name": "Paul Diaz",
+      "email": "paulrrdiaz@gmail.com"
     },
     {
       "id": "2",
-      "name": "Marc Grabanski",
-      "email": "m@marcgrabanski.com"
+      "name": "Area51",
+      "email": "info@area51.pe"
     }
   ]
 }

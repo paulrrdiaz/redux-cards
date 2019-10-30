@@ -25,4 +25,8 @@ export const CardDescription = styled.h4`
   font-size: 0.75rem;
   font-weight: 300;
   line-height: 1.4;
+
+  & + select {
+    margin-top: 0.5em;
+  }
 `;

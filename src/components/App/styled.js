@@ -66,6 +66,7 @@ const Styles = css`
   }
 
   input,
+  select,
   textarea {
     border: 0;
 

@@ -69,3 +69,8 @@ export const Textarea = styled.textarea`
   ${input}
   height: 80px;
 `;
+
+export const Select = styled.select`
+  ${input}
+  border-color: rgba(var(--yellow), 0.5);
+`;
