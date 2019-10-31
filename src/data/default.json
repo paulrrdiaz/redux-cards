@@ -16,7 +16,7 @@
         }
       ],
       "id": "1558196567543",
-      "title": "Backburner"
+      "title": "Backlog"
     },
     {
       "cards": [
@@ -44,13 +44,18 @@
   "users": [
     {
       "id": "1",
-      "name": "Steve Kinney",
-      "email": "hello@stevekinney.net"
+      "name": "Elder",
+      "email": "elder@area51.pe"
     },
     {
       "id": "2",
-      "name": "Marc Grabanski",
-      "email": "m@marcgrabanski.com"
+      "name": "Paul Diaz",
+      "email": "paulrrdiaz"
+    },
+    {
+      "id": "3",
+      "name": "Area51",
+      "email": "info@area51.pe"
     }
   ]
 }

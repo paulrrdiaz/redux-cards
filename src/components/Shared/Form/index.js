@@ -2,10 +2,10 @@ import { css } from "@emotion/core";
 import styled from "@emotion/styled";
 
 export const Form = styled.form`
-  display: flex;
   align-items: center;
-  justify-content: center;
+  display: flex;
   flex-direction: ${({ direction = "row" }) => direction};
+  justify-content: center;
   margin-bottom: ${({ marginBottom = false }) => (marginBottom ? "1em" : "0")};
 
   > div + div {
@@ -24,6 +24,10 @@ const getBackground = ({ looks }) => {
   switch (looks) {
     case "danger":
       return "rgba(var(--red), 0.9)";
+    case "success":
+      return "rgba(var(--green), 0.9)";
+    case "warning":
+      return "rgba(var(--yellow), 0.9)";
     default:
       return "rgba(var(--black), 0.5)";
   }

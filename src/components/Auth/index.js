@@ -14,7 +14,9 @@ export default () => {
           <Input required placeholder="Password" type="password" />
         </FormControl>
         <FormControl>
-          <Button type="submit">Log In</Button>
+          <Button looks="danger" type="submit">
+            Log In
+          </Button>
         </FormControl>
       </Form>
     </Auth>

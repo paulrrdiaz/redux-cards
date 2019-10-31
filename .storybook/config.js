@@ -2,7 +2,7 @@ import React from "react";
 import { configure, addParameters, addDecorator } from "@storybook/react";
 import { themes } from "@storybook/theming";
 import { Global, css } from "@emotion/core";
-import Styles from "components/Shared/Styles";
+import Styles from "components/App/styled";
 import { withKnobs } from "@storybook/addon-knobs";
 import { withA11y } from '@storybook/addon-a11y';
 

@@ -18,9 +18,7 @@ export default () => {
         <Textarea placeholder="Description" />
       </FormControl>
       <FormControl>
-        <Button disabled type="submit">
-          Create new card
-        </Button>
+        <Button type="submit">Create new card</Button>
       </FormControl>
     </Form>
   );
